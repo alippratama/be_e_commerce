@@ -1,3 +1,3 @@
 <?php 
-$kon=mysqli_connect('localhost','root','','e_commerce');
+$conn=mysqli_connect('localhost','root','','e_commerce');
 ?>

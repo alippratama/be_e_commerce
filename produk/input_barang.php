@@ -49,7 +49,7 @@ $q="INSERT INTO barang_tb (gambar_brg,kode_brg,nama_brg,harga_brg,id_kategori,st
 VALUES ('$gambar_brg','$kode_brg','$nama_brg','$harga_brg','$id_kategori','$stok_brg','$deskripsi_brg')";
 
 
-$result=mysqli_query($kon,$q);
+$result=mysqli_query($conn,$q);
                                                                       
 if ($result) {
 
