@@ -1,5 +1,5 @@
 <?php
-include "../kategori/koneksi.php";
+include "../env.php";
 
 $res = [
   "status" => 200,
