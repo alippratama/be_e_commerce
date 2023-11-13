@@ -7,9 +7,9 @@ $res = [
   "body" => "",
 ];
 
-$id = $_GET['id_kategori'];
+$id_kategori = $_GET['id_kategori'];
 
-$q = mysqli_query($conn, "DELETE FROM kategori_tb WHERE id_kategori='$id'");
+$q = mysqli_query($conn, "DELETE FROM kategori_tb WHERE id_kategori='$id_kategori'");
 
 if ($q){
   $res['status'] = 200;
