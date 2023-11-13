@@ -1,5 +1,5 @@
 <?php
-include "env.php";
+include "../env.php";
 
 $res = [
   "status" => 200,
