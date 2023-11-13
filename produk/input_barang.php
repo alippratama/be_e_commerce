@@ -1,5 +1,5 @@
 <?php
-include "koneksi.php";
+include "../kategori/koneksi.php";
 
 $res = [
   "status" => 200,
@@ -37,7 +37,7 @@ $id_kategori = $_POST['id_kategori'];
 $stok_brg = $_POST['stok_brg'];
 $deskripsi_brg = $_POST['deskripsi_brg'];
 
-$i=mysqli_query($kon, "SELECT * FROM kategori_tb");
+$i=mysqli_query($conn, "SELECT * FROM kategori_tb");
 
 while ($row = mysqli_fetch_array($i)) {
 
@@ -74,4 +74,4 @@ if ($result) {
 
 echo json_encode($res);
 ?>
-<!-- d  -->
+
